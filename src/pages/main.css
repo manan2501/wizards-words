@@ -1,0 +1,29 @@
+.name{
+  color:#FF3E4D;
+  transition: 0.3s;
+}
+
+.name:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(247, 137, 146);
+}
+#main-title{
+  transition: 0.5s;
+}
+
+#main-title:hover{
+  color: #FF3E4D;
+}
+
+#title{
+  transition: 0.5s;
+}
+
+#title:hover{
+  color: black;
+}
+
+a{
+  color: #FF3E4D;
+}
