@@ -1,6 +1,6 @@
 ---
 title: Why not to sign treaty with Planet Earth
-date: "2015-05-28T22:40:32.169Z"
+date: "2020-03-24"
 description: This is what a alien thinks about human and writes in his report.
 author: "Manan Kevadiya"
 ---
