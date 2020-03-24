@@ -46,7 +46,7 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
+      <p style={{color: 'var(--textNormal)'}}>
         Crafted by 
         {author.name.map((name,index) => (
           <strong className="name">

@@ -11,7 +11,9 @@ module.exports = {
       twitter: `dada`,
     },
   },
+  
   plugins: [
+      `gatsby-plugin-dark-mode`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -14,7 +14,7 @@ const Layout = ({ location, title, children }) => {
           marginBottom: rhythm(1.5),
           marginTop: 0,
         }}
-        id="main-title"
+        className="main-title"
       >
         <Link
           style={{
@@ -35,6 +35,7 @@ const Layout = ({ location, title, children }) => {
           fontFamily: `Montserrat, sans-serif`,
           marginTop: 0,
         }}
+        className="main-title"
       >
         <Link
           style={{
@@ -60,10 +61,10 @@ const Layout = ({ location, title, children }) => {
     >
       <header>{header}</header>
       <main>{children}</main>
-      <footer>
+      <footer style={{color: 'var(--textNormal)'}}>
         © {new Date().getFullYear()}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        &#10084; by MBL
       </footer>
     </div>
   )
