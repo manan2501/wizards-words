@@ -18,6 +18,7 @@ const BlogIndex = ({ data, location }) => {
     maxWidth: rhythm(24)}}>
       <Helmet>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
+        <script type="text/javascript" src="//cdn.livetrafficfeed.com/static/hitcounterjs/live.js"></script>
       </Helmet>
       <ThemeToggler>
           {({ theme, toggleTheme }) => (

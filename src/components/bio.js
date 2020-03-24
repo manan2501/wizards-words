@@ -47,16 +47,15 @@ const Bio = () => {
         }}
       />
       <p style={{color: 'var(--textNormal)'}}>
-        Crafted by 
-        {author.name.map((name,index) => (
-          <strong className="name">
-            <a style={{color: "inherit", textDecoration: "none"}} href={linkedInLinks[index]}>
-              <div>
-              {name}
-              </div>
-            </a> 
-          </strong> 
-        ))} {author.summary}
+        <strong>
+          <em>
+          "Do not take life too seriously. You will never get out of it alive."
+          <div style={{float: "right"}}>
+            -Elbert Hubbard
+          </div>
+          </em>
+        </strong>
+        {author.summary}
         {` `}
       </p>
     </div>
