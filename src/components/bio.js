@@ -50,10 +50,10 @@ const Bio = () => {
         <strong>
           <em>
           "Do not take life too seriously. You will never get out of it alive."
-          <div style={{float: "right"}}>
+          </em>
+          <div style={{float: "right", fontWeight: 200, fontSize: 15}}>
             -Elbert Hubbard
           </div>
-          </em>
         </strong>
         {author.summary}
         {` `}

@@ -29,7 +29,8 @@ All these traditional schools teach a child is What to think instead of how to t
 
 In school, they make friends and go out with those friends to watch movies. What kind of movies? BOLLYWOOD movies. What do they learn from it? Love? Nope, what they learn is bullshit. Because Bollywood movies show that love is equal to lovemaking and that is like porn and sex are equal. No, they aren't. Love has nothing to do with lovemaking, Love is all about caring. That is why a mother always takes care of her child and not perform physical intimacy.
 
-Summary: Humans are messing up this planet named Earth. They have no future. They calls themself homo sapiens but the truth is that they are no better than apes.
+##Summary:
+Humans are messing up this planet named Earth. They have no future. They call themself homo-sapiens but the truth is that they are no better than apes.
 
-PS: I am telling you, Mr. Zoe, these humans are weird creators they don't know what they are doing and how it is affecting other peoples in their surroundings. This planet isn't among the planet with whom we should have a relationship like friendship. Better we stay away from them.<br>
+####PS: I am telling you, Mr. Zoe, these humans are weird creators they don't know what they are doing and how it is affecting other peoples in their surroundings. This planet isn't among the planet with whom we should have a relationship like friendship. Better we stay away from them.<br>
 And our contract was that I am supposed to live here for 15 Earth Year's only, three extra years have passed When should I expect to see you with that ship in the sky?
