@@ -49,10 +49,10 @@ const Bio = () => {
       <p style={{color: 'var(--textNormal)'}}>
         <strong>
           <em>
-          "Do not take life too seriously. You will never get out of it alive."
+          “People that have trust issues only need to look in the mirror. There they will meet the one person that will betray them the most.”
           </em>
-          <div style={{float: "right", fontWeight: 200, fontSize: 15}}>
-            -Elbert Hubbard
+          <div style={{fontWeight: 200, fontSize: 15}}>
+           ― Shannon L. Alder 
           </div>
         </strong>
         {author.summary}
