@@ -6,11 +6,57 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import Helmet from "react-helmet"
+import clap from './clap.webp'
+import './blog.css'
+import { useState, useEffect } from "react"
+import { fireDb } from "../firebase"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
+  const [clapNumber, setClapNumber] = useState(0)
+  const [clapError, setClapError] = useState('')
+
+  const handleClap = () =>{
+    let isClapClickedLocal = localStorage.getItem('isClapClicked');
+    if(!isClapClickedLocal){
+      localStorage.setItem('isClapClicked', 1);
+    }
+    isClapClickedLocal = localStorage.getItem('isClapClicked');
+    if(isClapClickedLocal === "1"){
+      let clapNumber1 = clapNumber
+      fireDb.collection('clap').doc(post.frontmatter.title.slice(0,20)).set({
+        clap_number: clapNumber1+1
+      })
+      .then(()=> {setClapNumber(clapNumber1+1); localStorage.setItem('isClapClicked', 0)})
+      .catch(e => console.log('some error try'))
+    }
+    else{
+      setClapError('You have already clapped. Thank You')
+    }
+  }
+
+  useEffect(()=>{
+
+    let docRef = fireDb.collection("clap").doc(post.frontmatter.title.slice(0,20));
+
+    docRef.get().then(function(doc) {
+        if (doc.exists) {
+          console.log(doc.data())
+          setClapNumber(doc.data().clap_number)
+        } else {
+          fireDb.collection('clap').doc(post.frontmatter.title.slice(0,20)).set({
+            clap_number: clapNumber
+          })
+          .then(()=> {})
+          .catch(e => console.log('some error try again later'))
+        }
+    }).catch(function(error) {
+        console.log("Error getting document:", error);
+    });
+
+  },[])
 
   return (
     <div style={{marginLeft: `auto`,
@@ -64,6 +110,16 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             </p>
           </header>
           <section style={{color: 'var(--textNormal)'}} dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div style={{color: 'var(--textNormal)'}} >
+              <img src={clap} alt="clap" className="clap" onClick={() => handleClap()}/>
+              <span className="support">
+                {clapError !== "" ? clapError :"Show your support by Clapping." }
+                &#128522;
+              </span>
+          </div>
+          <span className="clap-number" style={{color: 'var(--textNormal)'}}>
+            {clapNumber} {clapNumber > 1 ? "claps": "clap"}
+          </span>
           <hr
             style={{
               marginBottom: rhythm(1),
