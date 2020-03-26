@@ -43,7 +43,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
     docRef.get().then(function(doc) {
         if (doc.exists) {
-          console.log(doc.data())
           setClapNumber(doc.data().clap_number)
         } else {
           fireDb.collection('clap').doc(post.frontmatter.title.slice(0,20)).set({
