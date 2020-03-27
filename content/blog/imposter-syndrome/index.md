@@ -24,8 +24,6 @@ When I see others in any field, also in programming, I always look up to the exp
 
 Also when I look at the students of my age who have worked hard to reach their goals, I often assume myself as a failure and it creates a Imposter Syndrome which sometimes demotivate me and a lot of motivation videos are required to recover it which is not a good sign.
 
-![imposter syndrome](./3.jpg)
-
 I always try my best to make Imposter Syndrome, not as an obstacle but something which pushes me to work more and make things better.
 
 # How to Overcome it?
