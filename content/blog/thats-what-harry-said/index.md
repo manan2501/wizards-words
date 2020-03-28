@@ -1,5 +1,5 @@
 ---
-title: "Harry potter taught us that no one deserves to live in closet"
+title: "Harry Potter taught us that no one deserves to live in closet"
 date: "2020-03-28"
 description: Let's talk about sexuality.
 author: "Manan Kevadiya & Dhwani Shah"
